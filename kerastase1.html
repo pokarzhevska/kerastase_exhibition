@@ -61,13 +61,13 @@
                 </div>
             </div>
             <div class="minPro6 text-center w-full d-sm-none">
-                <img src="./assets/images/image1/rectangle.png" class="rectangle"><br>
+                <img src="./assets/images/image1/rectangle.svg" class="rectangle"><br>
                 <img src="./assets/images/expand_circle_left.png" class="arrow_forward_ios_left"
                     onclick="productResize(1)">
                 <img src="./assets/images/image1/product 6.png" class="product6"><br>
-                <img src="./assets/images/image1/minPro1.png" class="minPro1">
-                <img src="./assets/images/image1/minPro2.png" class="minPro2">
-                <img src="./assets/images/image1/minPro3.png" class="minPro3">
+                <img src="./assets/images/image1/minPro1.png" class="minPro1"  style="right: 48px;  top: 829px;">
+                <img src="./assets/images/image1/minPro2.png" class="minPro2" style="top: 691px">
+                <img src="./assets/images/image1/minPro3.png" class="minPro3" style="left: calc(50% + 100px); top: 276px">
                 <img src="./assets/images/expand_circle_right.png" class="arrow_forward_ios_right"
                     onclick="nextSlide('Ingredients')">
                 <p class="minProBottomTxt">
@@ -81,7 +81,7 @@
             </div>
             <p class="ingredientsTxt">What makes it iconic?</p><br>
             <img src="./assets/images/expand_circle_left.png" class="arrow_forward_ios_left1"
-                onclick="nextSlide('Benefits')">
+                onclick="nextSlide('Benefits')" style="z-index: 9999">
             <div class="p-relative">
                 <video autoplay playsinline id="IngredientsVideo">
                     <source src="./assets/video/kerastase.mp4" type="video/mp4">
@@ -102,10 +102,10 @@
             <img src="./assets/images/expand_circle_right.png" class="arrow_forward_ios_right1" style="z-index: 9999"
                 onclick="nextSlide('Testimonials')">
             <div id="moveLine"
-                style="position: absolute; left: 810px !important; width: 10px; height: calc(100vh - 250px); background-color: #fff; z-index: 9999">
+                style="position: absolute; left: 810px !important; width: 10px; height: calc(100vh - 250px); background-color: #fff; z-index: 9999; animation-duration: 5s;">
             </div>
             <img src="./assets/images/image1/move.png" class="moveImg"
-                style="position: absolute; top: 1162px; left: 776px; z-index: 9999;"
+                style="position: absolute; top: 1162px; left: 776px; z-index: 9999; animation-duration: 5s;"
                 ontouchend="beforeAfterMouseUp(event)" ontouchmove="beforeAfterMouseMove(event)"
                 onmousedown="beforeAfterMouseDown(event)" onmousemove="beforeAfterMouseMove1(event)"
                 onmouseup="beforeAfterMouseUp1(event)">
@@ -126,76 +126,70 @@
 
         <div id="Testimonials" class="tab-pane m-0 p-0 w-full text-center w-full p-relative"><br>
             <div id="testimonialsMain">
-                <img src="./assets/images/image1/ourbest.png" class="ourBest"><br>
+                <img src="./assets/images/image1/ourbest.svg" class="ourBest"><br>
                 <img src="./assets/images/expand_circle_left.png" class="arrow_forward_ios_left1"
                     onclick="nextSlide('BeforeAfter')">
                 <img src="./assets/images/image1/product 6.png" class="product6"><br>
                 <img src="./assets/images/expand_circle_right.png" class="arrow_forward_ios_right1"
                     onclick="nextSlide('Apply')">
                 <div style="position: absolute; top: 873px; left: 127px; width: 156px; height: 208px; cursor: pointer">
-                    <img src="./assets/images/image1/komal.png"
-                        style="width: 156px"
+                    <img src="./assets/images/image1/komal.png" style="width: 156px"
                         onclick="showUserModal('modalKomal')">
-                    <p style="font-size: 22.79px; line-height: 24px; font-weight: 500;">Komal B</p>
+                    <p style="font-size: 22.79px; line-height: 24px; font-weight: 500;">Vidushi</p>
                     <img src="./assets/images/five-star.png">
                 </div>
                 <div style="position: absolute; top: 1261px; left: 180px; width: 156px; height: 208px; cursor: pointer">
-                    <img src="./assets/images/image1/Natasha.png"
-                        style="width: 156px"
+                    <img src="./assets/images/image1/Natasha.png" style="width: 156px"
                         onclick="showUserModal('modalNatasha')">
-                    <p style="font-size: 22.79px; line-height: 24px; font-weight: 500;">Natasha P</p>
+                    <p style="font-size: 22.79px; line-height: 24px; font-weight: 500;">Amelia</p>
                     <img src="./assets/images/five-star.png">
                 </div>
-                <div style="position: absolute; top: 1157px; right: 200px; width: 156px; height: 208px; cursor: pointer">
-                    <img src="./assets/images/image1/Rasna.png"
-                        style="width: 156px"
+                <div
+                    style="position: absolute; top: 1157px; right: 200px; width: 156px; height: 208px; cursor: pointer">
+                    <img src="./assets/images/image1/Rasna.png" style="width: 156px"
                         onclick="showUserModal('modalRasna')">
-                    <p style="font-size: 22.79px; line-height: 24px; font-weight: 500;">Rasna B</p>
+                    <p style="font-size: 22.79px; line-height: 24px; font-weight: 500;">LillieS</p>
                     <img src="./assets/images/five-star.png">
                 </div>
                 <div style="position: absolute; top: 671px; right: 170px; width: 156px; height: 208px; cursor: pointer">
-                    <img src="./assets/images/image1/shilarna.png"
-                        style="width: 156px"
+                    <img src="./assets/images/image1/shilarna.png" style="width: 156px"
                         onclick="showUserModal('modalShilarna')">
-                    <p style="font-size: 22.79px; line-height: 24px; font-weight: 500;">Shilarna V</p>
+                    <p style="font-size: 22.79px; line-height: 24px; font-weight: 500;">Shruti L</p>
                     <img src="./assets/images/less-star.png">
                 </div>
             </div>
             <div id="modalNatasha" class="d-sm-none p-relative" style="z-index: 9999; width: 100%; height: 1670px;">
-                <img src="./assets/images/expand_circle_left.png" class="arrow_forward_ios_left1">
-                <img src="./assets/images/expand_circle_right.png" class="arrow_forward_ios_right1">
+                <img src="./assets/images/expand_circle_left.png" class="arrow_forward_ios_left1" onclick="nextTesterminal(event, 'modalShilarna')">
+                <img src="./assets/images/expand_circle_right.png" class="arrow_forward_ios_right1" onclick="nextTesterminal(event, 'modalKomal')">
                 <img src="./assets/images/Cancel.png"
                     style="position: absolute; right: 105px; top: 229px; cursor: pointer"
                     onclick="hideUserModal('modalNatasha')">
-                <img src="./assets/images/image1/Natasha-modal.png"
+                <img src="./assets/images/image1/Natasha-modal.svg"
                     style="margin-top: 206px; width: calc(100% - 452px)">
             </div>
-            <div id="modalKomal" class="d-sm-none p-relative"
-                style="z-index: 9999; width: 100%; height: 1670px;">
-                <img src="./assets/images/expand_circle_left.png" class="arrow_forward_ios_left1">
-                <img src="./assets/images/expand_circle_right.png" class="arrow_forward_ios_right1">
+            <div id="modalKomal" class="d-sm-none p-relative" style="z-index: 9999; width: 100%; height: 1670px;">
+                <img src="./assets/images/expand_circle_left.png" class="arrow_forward_ios_left1" onclick="nextTesterminal(event, 'modalNatasha')">
+                <img src="./assets/images/expand_circle_right.png" class="arrow_forward_ios_right1" onclick="nextTesterminal(event, 'modalRasna')">
                 <img src="./assets/images/Cancel.png"
                     style="position: absolute; right: 105px; top: 229px; cursor: pointer"
                     onclick="hideUserModal('modalKomal')">
-                <img src="./assets/images/image1/komal-modal.png" style="margin-top: 193px; width: calc(100% - 452px)">
+                <img src="./assets/images/image1/komal-modal.svg" style="margin-top: 193px; width: calc(100% - 452px)">
             </div>
-            <div id="modalRasna" class="d-sm-none p-relative"
-                style="z-index: 9999; width: 100%; height: 1670px;">
-                <img src="./assets/images/expand_circle_left.png" class="arrow_forward_ios_left1">
-                <img src="./assets/images/expand_circle_right.png" class="arrow_forward_ios_right1">
+            <div id="modalRasna" class="d-sm-none p-relative" style="z-index: 9999; width: 100%; height: 1670px;">
+                <img src="./assets/images/expand_circle_left.png" class="arrow_forward_ios_left1" onclick="nextTesterminal(event, 'modalKomal')">
+                <img src="./assets/images/expand_circle_right.png" class="arrow_forward_ios_right1" onclick="nextTesterminal(event, 'modalShilarna')">
                 <img src="./assets/images/Cancel.png"
                     style="position: absolute; right: 105px; top: 229px; cursor: pointer"
                     onclick="hideUserModal('modalRasna')">
-                <img src="./assets/images/image1/Rasna-modal.png" style="margin-top: 167px; width: calc(100% - 452px)">
+                <img src="./assets/images/image1/Rasna-modal.svg" style="margin-top: 167px; width: calc(100% - 452px)">
             </div>
-            <div id="modalShilarna" class="d-sm-none p-relative"
-                style="z-index: 9999; width: 100%; height: 1670px;">
-                <img src="./assets/images/expand_circle_left.png" class="arrow_forward_ios_left1">
-                <img src="./assets/images/expand_circle_right.png" class="arrow_forward_ios_right1">
+            <div id="modalShilarna" class="d-sm-none p-relative" style="z-index: 9999; width: 100%; height: 1670px;">
+                <img src="./assets/images/expand_circle_left.png" class="arrow_forward_ios_left1" onclick="nextTesterminal(event, 'modalRasna')">
+                <img src="./assets/images/expand_circle_right.png" class="arrow_forward_ios_right1" onclick="nextTesterminal(event, 'modalNatasha')">
                 <img src="./assets/images/Cancel.png"
                     style="position: absolute; right: 105px; top: 229px; cursor: pointer"
                     onclick="hideUserModal('modalShilarna')">
-                <img src="./assets/images/image1/shilarna-modal.png"
+                <img src="./assets/images/image1/shilarna-modal.svg"
                     style="margin-top: 165px; width: calc(100% - 452px)">
             </div>
         </div>
@@ -204,7 +198,7 @@
             <img src="./assets/images/expand_circle_left.png" class="arrow_forward_ios_left1"
                 onclick="nextSlide('Testimonials')">
             <p style="margin-top: 70px; margin-bottom: 39px; font-size: 52px; line-height: 56px;">HOW TO USE <span
-                    style="font-weight: bold;">ELIXIR ULTIME?</span></p>
+                    style="font-weight: bold;">NUTRITIVE SERUM?</span></p>
             <div class="p-relative">
                 <video autoplay playsinline id="applyVideo">
                     <source src="./assets/video/how to apply.mp4">
@@ -235,6 +229,13 @@
         var stoptimeout3 = '';
         var mouseFlg = false;
         var tabArray = ['Benefits', 'Ingredients', 'BeforeAfter', 'Testimonials', 'Apply']
+
+        $('.tab-pane').click(function() {
+            clearTimeout(stoptimeout)
+            clearTimeout(stoptimeout1)
+            clearTimeout(stoptimeout2)
+            clearTimeout(stoptimeout3)
+        })
 
         function startPage() {
             $('.progress').html('<div class="progress-bar"></div>')
@@ -268,6 +269,11 @@
                     productResize(0)
                 }
             }, 5000);
+        }
+
+        function nextTesterminal(event, modalID) {
+            $('#' + modalID).removeClass('d-sm-none');
+            $('#' + event.target.parentNode.id).addClass('d-sm-none')
         }
 
         function showUserModal(modalID) {
@@ -326,19 +332,23 @@
                         $('.applyReplay').removeClass('d-sm-none');
                     }
                 }, 11000);
-            } else if(tabID == 'BeforeAfter') {
+            } else if (tabID == 'BeforeAfter') {
                 stoptimeout = setTimeout(() => {
                     if ($('#BeforeAfterTab').hasClass('active')) {
                         nextSlide('Testimonials')
                     }
                 }, 10000);
-                stoptimeout3 = setTimeout(() => {
-                    if ($('#BeforeAfterTab').hasClass('active')) {
-                        $('.beforeModelContainer').css('animation-name', 'beforeModelContainer-animation')
-                        $('.afterModelContainer').css('animation-name', 'afterModelContainer-animation')
-                    }
-                }, 2500);
-            } else if(tabID == 'Testimonials') {
+                if ($('#BeforeAfterTab').hasClass('active')) {
+                    $('.beforeModelContainer').css('animation-name', 'beforeModelContainer-animation')
+                    $('.afterModelContainer').css('animation-name', 'afterModelContainer-animation')
+                    $('.beforeModelContainer').css('width', window.innerWidth - 820)
+                    $('.afterModelContainer').css('width', 810)
+                    $('#moveLine').css('animation-name', 'moveLine-animation');
+                    $('.moveImg').css('animation-name', 'moveImg-animation')
+                    $('#moveLine').css('left', 260);
+                    $('.moveImg').css('left', 225)
+                }
+            } else if (tabID == 'Testimonials') {
                 stoptimeout = setTimeout(() => {
                     if ($('#TestimonialsTab').hasClass('active')) {
                         nextSlide('Apply')

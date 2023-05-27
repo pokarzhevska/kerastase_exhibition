@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kerastase</title>
+    <link rel="stylesheet" href="./assets/bootstrap-5.0.2-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+
+<body class="m-0 text-center" style="width: 100%; height: 1920px; overflow: hidden;" onload="startPage()">
+    <img src="./assets/images/Kerastase Logo_Black.png" class="kerastase_logo">
+    <div class="progress">
+        <div class="progress-bar"></div>
+    </div>
+
+    <img src="./assets/images/image3/leafs 1.png" class="leafs1"
+        style="position: fixed; top: 1350.06px; left: -78.07px; opacity: 0.3;">
+    <img src="./assets/images/image3/leafs 2.png" class="leafs2"
+        style="position: fixed; top: 1002.63px; right: 0px; opacity: 0.3;">
+    <img src="./assets/images/image3/leafs 3.png" class="leafs3"
+        style="position: fixed; top: 349.07px; left: 43.97px; opacity: 0.3;">
+
+    <ul class="nav nav-pills d-flex justify-content-center" role="tablist">
+        <li class="nav-item">
+            <a class="nav-link active" data-bs-toggle="pill" href="#Benefits" id="BenefitsTab"
+                onclick="nextSlide('Benefits')">Benefits</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" data-bs-toggle="pill" href="#Ingredients" id="IngredientsTab"
+                onclick="nextSlide('Ingredients')">Ingredients</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" data-bs-toggle="pill" href="#BeforeAfter" id="BeforeAfterTab"
+                onclick="nextSlide('BeforeAfter')">Before & After</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" data-bs-toggle="pill" href="#Testimonials" id="TestimonialsTab"
+                onclick="nextSlide('Testimonials')">Testimonials</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" data-bs-toggle="pill" href="#Apply" id="ApplyTab" onclick="nextSlide('Apply')">How to
+                Apply</a>
+        </li>
+    </ul>
+
+    <div class="tab-content">
+        <div id="Benefits" class="container tab-pane m-0 p-0 w-full active"><br>
+            <div class="text-center w-full">
+                <img src="./assets/images/image3/Elixir Ultime.png" class="ElixirUltimate" style="width: 909px">
+            </div>
+            <div class="maxPro6 text-center w-full">
+                <img src="./assets/images/expand_circle_left.png" class="arrow_forward_ios_left" onclick="backToHome()">
+                <img src="./assets/images/image3/product 6.png" class="product6"><br>
+                <img src="./assets/images/expand_circle_right.png" class="arrow_forward_ios_right"
+                    onclick="productResize(0)">
+                <div class="DiscoverElixirUltimate">Discover Elixir Ultimate
+                    <img src="./assets/images/vector.png" onclick="productResize(0)">
+                </div>
+            </div>
+            <div class="minPro6 text-center w-full d-sm-none">
+                <img src="./assets/images/image3/rectangle.svg" class="rectangle"><br>
+                <img src="./assets/images/expand_circle_left.png" class="arrow_forward_ios_left"
+                    onclick="productResize(1)">
+                <img src="./assets/images/image3/product 6.png" class="product6"><br>
+                <img src="./assets/images/image3/minPro1.png" class="minPro1">
+                <img src="./assets/images/image3/minPro2.png" class="minPro2">
+                <img src="./assets/images/image3/minPro3.png" class="minPro3">
+                <img src="./assets/images/expand_circle_right.png" class="arrow_forward_ios_right"
+                    onclick="nextSlide('Ingredients')">
+                <p class="minProBottomTxt">
+                    **Hair-Fall due to breakage. Instrumental test - Shampoo + Masque + Leave on<br>
+                    (Serum/Ampoules Cure) Vs. Non- Conditioning Shampoo.
+                </p>
+            </div>
+        </div>
+        <div id="Ingredients" class="container tab-pane m-0 p-0 w-full text-center p-relative"><br>
+            <div class="text-center w-full">
+                <img src="./assets/images/image3/Elixir Ultime.png" class="ElixirUltimate" style="width: 909px">
+            </div>
+            <p class="ingredientsTxt">What makes it iconic?</p><br>
+            <img src="./assets/images/expand_circle_left.png" class="arrow_forward_ios_left1"
+                onclick="nextSlide('Benefits')" style="z-index: 9999">
+            <div class="p-relative">
+                <video autoplay playsinline id="IngredientsVideo">
+                    <source src="./assets/video/_kerastase.mp4" type="video/mp4">
+                </video>
+                <div class="ingredientsReplayContainer d-sm-none">
+                    <img src="./assets/images/replay.png" class="ingredientsReplay d-sm-none"
+                        onclick="playIngredientsVideo()"
+                        style="position: absolute; top: 570px; left: calc(50% - 55px); width: 110px;">
+                </div>
+            </div>
+            <img src="./assets/images/expand_circle_right.png" class="arrow_forward_ios_right1"
+                onclick="nextSlide('BeforeAfter')">
+        </div>
+
+        <div id="BeforeAfter" class="tab-pane m-0 p-0 w-full text-center justify-content-between w-full p-relative"><br>
+            <img src="./assets/images/expand_circle_left.png" class="arrow_forward_ios_left1" style="z-index: 9999"
+                onclick="nextSlide('Ingredients')">
+            <img src="./assets/images/expand_circle_right.png" class="arrow_forward_ios_right1" style="z-index: 9999"
+                onclick="nextSlide('Testimonials')">
+            <div id="moveLine"
+                style="position: absolute; left: 810px !important; width: 10px; height: calc(100vh - 250px); background-color: #fff; z-index: 9999; animation-duration: 5s;">
+            </div>
+            <img src="./assets/images/image3/move.png" class="moveImg"
+                style="position: absolute; top: 1162px; left: 776px; z-index: 9999; animation-duration: 5s;"
+                ontouchend="beforeAfterMouseUp(event)" ontouchmove="beforeAfterMouseMove(event)"
+                onmousedown="beforeAfterMouseDown(event)" onmousemove="beforeAfterMouseMove1(event)"
+                onmouseup="beforeAfterMouseUp1(event)">
+            <div class="beforeModelContainer">
+                <img src="./assets/images/image3/Before Model.png" class="beforeModel" style="bottom: -350px; width: 1200px">
+                <p
+                    style="position: absolute; left: 170px; top: 212px; font-size: 50px; font-weight: 500; line-height: 54px;">
+                    BEFORE</p>
+            </div>
+            <div class="afterModelContainer">
+                <img src="./assets/images/image3/After model.png" class="afterModel" style="width: 1000px">
+                <p
+                    style="position: absolute; right: 170px; top: 212px; font-size: 50px; font-weight: 500; line-height: 54px;">
+                    AFTER</p>
+            </div>
+            <p class="beforeAfterSwipe">Swipe to see the results</p>
+        </div>
+
+        <div id="Testimonials" class="tab-pane m-0 p-0 w-full text-center w-full p-relative"><br>
+            <div id="testimonialsMain">
+                <img src="./assets/images/image3/ourbest.svg" class="ourBest"><br>
+                <img src="./assets/images/expand_circle_left.png" class="arrow_forward_ios_left1"
+                    onclick="nextSlide('BeforeAfter')">
+                <img src="./assets/images/image3/product 6.png" class="product6"><br>
+                <img src="./assets/images/expand_circle_right.png" class="arrow_forward_ios_right1"
+                    onclick="nextSlide('Apply')">
+                <div style="position: absolute; top: 873px; left: 127px; width: 156px; height: 208px; cursor: pointer">
+                    <img src="./assets/images/image3/komal.png" style="width: 156px"
+                        onclick="showUserModal('modalKomal')">
+                    <p style="font-size: 22.79px; line-height: 24px; font-weight: 500;">Vidushi</p>
+                    <img src="./assets/images/five-star-red.png">
+                </div>
+                <div style="position: absolute; top: 1261px; left: 180px; width: 156px; height: 208px; cursor: pointer">
+                    <img src="./assets/images/image3/Natasha.png" style="width: 156px"
+                        onclick="showUserModal('modalNatasha')">
+                    <p style="font-size: 22.79px; line-height: 24px; font-weight: 500;">Amelia</p>
+                    <img src="./assets/images/five-star-red.png">
+                </div>
+                <div
+                    style="position: absolute; top: 1157px; right: 200px; width: 156px; height: 208px; cursor: pointer">
+                    <img src="./assets/images/image3/Rasna.png" style="width: 156px"
+                        onclick="showUserModal('modalRasna')">
+                    <p style="font-size: 22.79px; line-height: 24px; font-weight: 500;">LillieS</p>
+                    <img src="./assets/images/five-star-red.png">
+                </div>
+                <div style="position: absolute; top: 671px; right: 170px; width: 156px; height: 208px; cursor: pointer">
+                    <img src="./assets/images/image3/shilarna.png" style="width: 156px"
+                        onclick="showUserModal('modalShilarna')">
+                    <p style="font-size: 22.79px; line-height: 24px; font-weight: 500;">Shruti L</p>
+                    <img src="./assets/images/five-star-red.png">
+                </div>
+            </div>
+            <div id="modalNatasha" class="d-sm-none p-relative" style="z-index: 9999; width: 100%; height: 1670px;">
+                <img src="./assets/images/expand_circle_left.png" class="arrow_forward_ios_left1" onclick="nextTesterminal(event, 'modalShilarna')">
+                <img src="./assets/images/expand_circle_right.png" class="arrow_forward_ios_right1" onclick="nextTesterminal(event, 'modalKomal')">
+                <img src="./assets/images/Cancel.png"
+                    style="position: absolute; right: 105px; top: 229px; cursor: pointer"
+                    onclick="hideUserModal('modalNatasha')">
+                <img src="./assets/images/image3/Natasha-modal.svg"
+                    style="margin-top: 206px; width: calc(100% - 452px)">
+            </div>
+            <div id="modalKomal" class="d-sm-none p-relative" style="z-index: 9999; width: 100%; height: 1670px;">
+                <img src="./assets/images/expand_circle_left.png" class="arrow_forward_ios_left1" onclick="nextTesterminal(event, 'modalNatasha')">
+                <img src="./assets/images/expand_circle_right.png" class="arrow_forward_ios_right1" onclick="nextTesterminal(event, 'modalRasna')">
+                <img src="./assets/images/Cancel.png"
+                    style="position: absolute; right: 105px; top: 229px; cursor: pointer"
+                    onclick="hideUserModal('modalKomal')">
+                <img src="./assets/images/image3/komal-modal.svg" style="margin-top: 193px; width: calc(100% - 452px)">
+            </div>
+            <div id="modalRasna" class="d-sm-none p-relative" style="z-index: 9999; width: 100%; height: 1670px;">
+                <img src="./assets/images/expand_circle_left.png" class="arrow_forward_ios_left1" onclick="nextTesterminal(event, 'modalKomal')">
+                <img src="./assets/images/expand_circle_right.png" class="arrow_forward_ios_right1" onclick="nextTesterminal(event, 'modalShilarna')">
+                <img src="./assets/images/Cancel.png"
+                    style="position: absolute; right: 105px; top: 229px; cursor: pointer"
+                    onclick="hideUserModal('modalRasna')">
+                <img src="./assets/images/image3/Rasna-modal.svg" style="margin-top: 167px; width: calc(100% - 452px)">
+            </div>
+            <div id="modalShilarna" class="d-sm-none p-relative" style="z-index: 9999; width: 100%; height: 1670px;">
+                <img src="./assets/images/expand_circle_left.png" class="arrow_forward_ios_left1" onclick="nextTesterminal(event, 'modalRasna')">
+                <img src="./assets/images/expand_circle_right.png" class="arrow_forward_ios_right1" onclick="nextTesterminal(event, 'modalNatasha')">
+                <img src="./assets/images/Cancel.png"
+                    style="position: absolute; right: 105px; top: 229px; cursor: pointer"
+                    onclick="hideUserModal('modalShilarna')">
+                <img src="./assets/images/image3/shilarna-modal.svg"
+                    style="margin-top: 165px; width: calc(100% - 452px)">
+            </div>
+        </div>
+
+        <div id="Apply" class="tab-pane m-0 p-0 w-full text-center w-full p-relative"><br>
+            <img src="./assets/images/expand_circle_left.png" class="arrow_forward_ios_left1"
+                onclick="nextSlide('Testimonials')">
+            <p style="margin-top: 70px; margin-bottom: 27px; font-size: 52px; line-height: 56px;">HOW TO USE<br><span
+                    style="font-weight: bold;">GENESIS ANTI-FALL SERUM?</span></p>
+            <div class="p-relative">
+                <video autoplay playsinline id="applyVideo">
+                    <source src="./assets/video/_how to apply.mp4">
+                </video>
+                <div class="applyReplayContainer d-sm-none"
+                    style="position: absolute; width: 831px; height: 467px; left: calc(50% - 415px); top: 0px; background-color: rgba(0, 0, 0, 0.5)">
+                    <img src="./assets/images/replay.png" class="applyReplay d-sm-none" onclick="applyVideoPlay()"
+                        style="position: absolute; top: 178px; left: calc(50% - 55px); width: 110px;">
+                </div>
+            </div>
+            <p style="margin-top: 91.12px; margin-bottom: 33px; font-size: 50px; line-height: 54px; font-weight: 500;">
+                ASK YOUR HAIR STYLIST<br> FOR A <span style="font-weight: bold;">DIAGNOSIS</span></p>
+            <img src="./assets/images/consultation kerastase.png" style="width: 831px; height: 467.44px">
+            <p class="liftOurOther"
+                style="margin-top: 97px; margin-bottom: 127px; font-size: 33px; font-style: italic; font-weight: 300; line-height: 23px; letter-spacing: -1.5px;">
+                "Lift our other iconic products to discover more!"</p>
+            <img src="./assets/images/back to home.png" class="backToHome" onclick="backToHome()">
+        </div>
+    </div>
+    <script src="./assets/bootstrap-5.0.2-dist/js/bootstrap.min.js"></script>
+    <script src="./assets/js/jquery.min.js"></script>
+
+    <script>
+
+        var stoptimeout = ''
+        var stoptimeout1 = ''
+        var stoptimeout2 = '';
+        var stoptimeout3 = '';
+        var mouseFlg = false;
+        var tabArray = ['Benefits', 'Ingredients', 'BeforeAfter', 'Testimonials', 'Apply']
+
+        $('.tab-pane').click(function() {
+            clearTimeout(stoptimeout)
+            clearTimeout(stoptimeout1)
+            clearTimeout(stoptimeout2)
+            clearTimeout(stoptimeout3)
+        })
+
+        function startPage() {
+            $('.progress').html('<div class="progress-bar"></div>')
+            clearTimeout(stoptimeout)
+            clearTimeout(stoptimeout1)
+            clearTimeout(stoptimeout2)
+            clearTimeout(stoptimeout3)
+            stoptimeout1 = setTimeout(() => {
+                if ($('.minPro6').hasClass('d-sm-none')) {
+                    productResize(0);
+                }
+            }, 5000);
+        }
+
+        function productResize(size) {
+            $('.progress').html('<div class="progress-bar"></div>')
+            clearTimeout(stoptimeout)
+            clearTimeout(stoptimeout1)
+            clearTimeout(stoptimeout2)
+            clearTimeout(stoptimeout3)
+            if (size == 0) {
+                $('.maxPro6').addClass('d-sm-none')
+                $('.minPro6').removeClass('d-sm-none')
+            } else {
+                $('.minPro6').addClass('d-sm-none');
+                $('.maxPro6').removeClass('d-sm-none');
+            }
+
+            stoptimeout2 = setTimeout(() => {
+                if ($('.minPro6').hasClass('d-sm-none')) {
+                    productResize(0)
+                }
+            }, 5000);
+        }
+
+        function nextTesterminal(event, modalID) {
+            $('#' + modalID).removeClass('d-sm-none');
+            $('#' + event.target.parentNode.id).addClass('d-sm-none')
+        }
+
+        function showUserModal(modalID) {
+            $('#' + modalID).removeClass('d-sm-none');
+            $('#testimonialsMain').addClass('d-sm-none')
+        }
+
+        function hideUserModal(modalID) {
+            $('#' + modalID).addClass('d-sm-none');
+            $('#testimonialsMain').removeClass('d-sm-none')
+        }
+
+        function nextSlide(tabID) {
+            $('.progress').html('<div class="progress-bar"></div>')
+            if (tabID == 'Ingredients') {
+                playIngredientsVideo()
+            } else {
+                document.getElementById("IngredientsVideo").pause()
+            }
+            if (tabID == 'Apply') {
+                applyVideoPlay()
+            } else {
+                document.getElementById("applyVideo").pause()
+            }
+            if (tabID == 'BeforeAfter') {
+                $('#BeforeAfter').addClass('d-flex')
+            } else {
+                $('#BeforeAfter').removeClass('d-flex')
+            }
+            $('.nav-link').removeClass('active');
+            $('#' + tabID + 'Tab').addClass('active');
+            $('.tab-pane').removeClass('active');
+            $('#' + tabID).addClass('active');
+            clearTimeout(stoptimeout)
+            clearTimeout(stoptimeout1)
+            clearTimeout(stoptimeout2)
+            clearTimeout(stoptimeout3)
+            if (tabID == 'Ingredients') {
+                stoptimeout = setTimeout(() => {
+                    if ($('#IngredientsTab').hasClass('active')) {
+                        nextSlide('BeforeAfter')
+                    }
+                }, 13000);
+                stoptimeout3 = setTimeout(() => {
+                    if ($('#IngredientsTab').hasClass('active')) {
+                        document.getElementById("IngredientsVideo").pause()
+                        $('.ingredientsReplayContainer').removeClass('d-sm-none');
+                        $('.ingredientsReplay').removeClass('d-sm-none');
+                    }
+                }, 11000);
+            } else if (tabID == 'Apply') {
+                stoptimeout3 = setTimeout(() => {
+                    if ($('#ApplyTab').hasClass('active')) {
+                        document.getElementById("applyVideo").pause()
+                        $('.applyReplayContainer').removeClass('d-sm-none');
+                        $('.applyReplay').removeClass('d-sm-none');
+                    }
+                }, 11000);
+            } else if (tabID == 'BeforeAfter') {
+                stoptimeout = setTimeout(() => {
+                    if ($('#BeforeAfterTab').hasClass('active')) {
+                        nextSlide('Testimonials')
+                    }
+                }, 10000);
+                if ($('#BeforeAfterTab').hasClass('active')) {
+                    $('.beforeModelContainer').css('animation-name', 'beforeModelContainer-animation')
+                    $('.afterModelContainer').css('animation-name', 'afterModelContainer-animation')
+                    $('.beforeModelContainer').css('width', window.innerWidth - 820)
+                    $('.afterModelContainer').css('width', 810)
+                    $('#moveLine').css('animation-name', 'moveLine-animation');
+                    $('.moveImg').css('animation-name', 'moveImg-animation')
+                    $('#moveLine').css('left', 260);
+                    $('.moveImg').css('left', 225)
+                }
+            } else if (tabID == 'Testimonials') {
+                stoptimeout = setTimeout(() => {
+                    if ($('#TestimonialsTab').hasClass('active')) {
+                        nextSlide('Apply')
+                    }
+                }, 10000);
+            }
+
+        }
+
+        function beforeAfterMouseUp(event) {
+            if (event.changedTouches[0].clientX > 540) {
+                $('#moveLine').css('left', 810);
+                $('.moveImg').css('left', 776)
+                $('.beforeModelContainer').css('width', 810)
+                $('.afterModelContainer').css('width', window.innerWidth - 820)
+            } else {
+                $('#moveLine').css('left', 260);
+                $('.moveImg').css('left', 225)
+                $('.beforeModelContainer').css('width', window.innerWidth - 820)
+                $('.afterModelContainer').css('width', 810)
+            }
+            $('#moveLine').css('transition: 1s');
+            $('.moveImg').css('transition: 1s');
+
+            setTimeout(() => {
+                $('#moveLine').css('transition: 0s');
+                $('.moveImg').css('transition: 0s');
+            }, 1000);
+        }
+
+        function beforeAfterMouseMove(event) {
+            $('#moveLine').css('left', event.touches[0].clientX);
+            $('.moveImg').css('left', event.touches[0].clientX - 35)
+            $('.beforeModelContainer').css('width', event.touches[0].clientX)
+            $('.afterModelContainer').css('width', window.innerWidth - event.touches[0].clientX - 10)
+        }
+
+        function playIngredientsVideo() {
+            document.getElementById("IngredientsVideo").play();
+            $('.ingredientsReplayContainer').addClass('d-sm-none');
+            $('.ingredientsReplay').addClass('d-sm-none');
+        }
+
+        function applyVideoPlay() {
+            document.getElementById("applyVideo").play();
+            $('.applyReplayContainer').addClass('d-sm-none');
+            $('.applyReplay').addClass('d-sm-none');
+        }
+
+        function backToHome() {
+            window.location = './index.html'
+        }
+    </script>
+
+</body>
+
+</html>
