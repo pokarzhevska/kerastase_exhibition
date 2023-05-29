@@ -49,24 +49,42 @@
 }
 
 .ElixirUltimate {
-    margin-top: 73px;
+    margin-top: 30px;
     width: 839px;
     height: 202px;
 }
 
 .tab-pane {
     max-width: 100%;
-    background-color: #f5f5f5;;
+    background-color: #f5f5f5;
+    height: 1653px;
 }
 
 .maxPro6, .minPro6 {
     position: relative;
+    height: 1430px;
 }
 
 .maxPro6 .product6 {
     margin-top: 42px;
     width: 410px;
     height: 1101px;
+    animation-name: maxPro6-animation;
+    animation-duration: 1s;
+}
+
+@keyframes maxPro6-animation {
+    from {
+        width: 318.18px;
+        height: 853.6px;
+        margin-top: 350px;
+    }
+    
+    to {
+        width: 410px;
+        height: 1101px;
+        margin-top: 42px;
+    }
 }
 
 .arrow_forward_ios_left {
@@ -79,6 +97,24 @@
 }
 
 .arrow_forward_ios_right {
+    position: absolute;
+    width: 71.22px;
+    height: 71.22px;
+    right: 72px;
+    top: 519.78px;
+    cursor: pointer;
+}
+
+.arrow_forward_ios_left2 {
+    position: absolute;
+    width: 71.22px;
+    height: 71.22px;
+    left: 72px;
+    top: 519.78px;
+    cursor: pointer;
+}
+
+.arrow_forward_ios_right2 {
     position: absolute;
     width: 71.22px;
     height: 71.22px;
@@ -106,10 +142,11 @@
 }
 
 .DiscoverElixirUltimate {
+    position: absolute;
+    margin-left: 350px;
     font-size: 40px;
     font-style: italic;
-    margin-top: 66px;
-    margin-bottom: 160px;
+    bottom: 160px;
     font-weight: 300;
 }
 
@@ -123,6 +160,18 @@
     width: 798px;
     height: 165px;
     margin-top: 30px;
+    animation-name: rectangle-animation;
+    animation-duration: 1s;
+}
+
+@keyframes rectangle-animation {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
 }
 
 .minPro6 .product6 {
@@ -130,6 +179,22 @@
     width: 318.18px;
     height: 853.6px;
     margin-bottom: 168.4px;
+    animation-name: minPro6-animation;
+    animation-duration: 1s;
+}
+
+@keyframes minPro6-animation {
+    from {
+        width: 410px;
+        height: 1101px;
+        margin-top: -160px;
+    }
+
+    to {
+        width: 318.18px;
+        height: 853.6px;
+        margin-top: 178px;
+    }
 }
 
 .minProBottomTxt {
@@ -138,29 +203,104 @@
     right: 63px;
     font-size: 25px;
     line-height: 25px;
+    animation-name: minProBottomTxt-animation;
+    animation-duration: 1s;
+}
+
+@keyframes minProBottomTxt-animation {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
 }
 
 .minPro1 {
     position: absolute;
     top: 783px;
-    right: 71px;
+    left: calc(50% + 110px);
     width: 353px;
     height: 120px;
+    animation-name: minPro1-animation;
+    animation-duration: 4s;
 }
+
+@keyframes minPro1-animation {
+    0% {
+        opacity: 0;
+    }
+
+    25% {
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 0;
+    }
+
+    75% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
 .minPro2 {
     position: absolute;
     top: 861px;
-    left: 65px;
+    right: calc(50% + 110px);
     width: 355px;
     height: 169px;
+    animation-name: minPro2-animation;
+    animation-duration: 3s;
 }
+
+@keyframes minPro2-animation {
+    0% {
+        opacity: 0;
+    }
+
+    33% {
+        opacity: 0;
+    }
+
+    66% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+
 .minPro3 {
     position: absolute;
     top: 235px;
-    left: 210px;
+    right: calc(50% - 135px);
     width: 463px;
     height: 443px;
+    animation-name: minPro3-animation;
+    animation-duration: 2s;
 }
+
+@keyframes minPro3-animation {
+    0% {
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
 
 .ingredientsTxt {
     font-size: 65px;
@@ -172,7 +312,6 @@
 
 #Ingredients video {
     margin-top: 40px;
-    width: 682px;
     height: 1210.73px;
     margin-bottom: 84.27px;
 }
@@ -193,4 +332,32 @@
 #Apply video {
     width: 831px;
     height: 467px;
+}
+
+.beforeModelContainer {
+    position: relative;
+    width: 900px;
+    height: 1653px;
+    overflow: hidden;
+}
+
+.beforeModel {
+    position: absolute;
+    bottom: -30px;
+    left: 0px;
+    width: 1080px;
+}
+
+.afterModelContainer {
+    position: relative;
+    width: calc(100% - 910px);
+    height: 1653px;
+    overflow: hidden;
+}
+
+.afterModel {
+    position: absolute;
+    width: 1080px;
+    right: 0px;
+    bottom: 0px;
 }

@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="./assets/css/style.css">
 </head>
 
-<body class="m-0 text-center">
+<body class="m-0 text-center" style="width: 1080px; height: 1920px; overflow:hidden" onload="startPage()">
     <img src="./assets/images/Kerastase Logo_Black.png" class="kerastase_logo">
     <div class="progress">
         <div class="progress-bar"></div>
@@ -18,19 +18,19 @@
 
     <ul class="nav nav-pills d-flex justify-content-center" role="tablist">
         <li class="nav-item">
-            <a class="nav-link active" data-bs-toggle="pill" href="#Benefits" id="BenefitsTab">Benefits</a>
+            <a class="nav-link active" data-bs-toggle="pill" href="#Benefits" id="BenefitsTab" onclick="nextSlide('Benefits')">Benefits</a>
         </li>
         <li class="nav-item">
-            <a class="nav-link" data-bs-toggle="pill" href="#Ingredients" id="IngredientsTab">Ingredients</a>
+            <a class="nav-link" data-bs-toggle="pill" href="#Ingredients" id="IngredientsTab" onclick="nextSlide('Ingredients')">Ingredients</a>
         </li>
         <li class="nav-item">
-            <a class="nav-link" data-bs-toggle="pill" href="#BeforeAfter" id="BeforeAfterTab">Before & After</a>
+            <a class="nav-link" data-bs-toggle="pill" href="#BeforeAfter" id="BeforeAfterTab" onclick="nextSlide('BeforeAfter')">Before & After</a>
         </li>
         <li class="nav-item">
-            <a class="nav-link" data-bs-toggle="pill" href="#Testimonials" id="TestimonialsTab">Testimonials</a>
+            <a class="nav-link" data-bs-toggle="pill" href="#Testimonials" id="TestimonialsTab" onclick="nextSlide('Testimonials')">Testimonials</a>
         </li>
         <li class="nav-item">
-            <a class="nav-link" data-bs-toggle="pill" href="#Apply" id="ApplyTab">How to Apply</a>
+            <a class="nav-link" data-bs-toggle="pill" href="#Apply" id="ApplyTab" onclick="nextSlide('Apply')">How to Apply</a>
         </li>
     </ul>
 
@@ -39,50 +39,61 @@
             <div class="text-center w-full">
                 <img src="./assets/images/Elixir Ultime.png" class="ElixirUltimate">
             </div>
-            <div class="maxPro6 text-center w-full d-sm-none">
+            <div class="maxPro6 text-center w-full">
                 <img src="./assets/images/arrow_forward_ios_left.png" class="arrow_forward_ios_left">
                 <img src="./assets/images/product 6.png" class="product6"><br>
-                <img src="./assets/images/arrow_forward_ios_right.png" class="arrow_forward_ios_right">
+                <img src="./assets/images/arrow_forward_ios_right.png" class="arrow_forward_ios_right" onclick="productResize(0)">
                 <div class="DiscoverElixirUltimate">Discover Elixir Ultimate
                     <img src="./assets/images/vector.png">
                 </div>
             </div>
-            <div class="minPro6 text-center w-full">
+            <div class="minPro6 text-center w-full d-sm-none">
                 <img src="./assets/images/rectangle.png" class="rectangle"><br>
-                <img src="./assets/images/arrow_forward_ios_left.png" class="arrow_forward_ios_left">
+                <img src="./assets/images/arrow_forward_ios_left.png" class="arrow_forward_ios_left" onclick="productResize(1)">
                 <img src="./assets/images/product 6.png" class="product6"><br>
                 <img src="./assets/images/minPro1.png" class="minPro1">
                 <img src="./assets/images/minPro2.png" class="minPro2">
                 <img src="./assets/images/minPro3.png" class="minPro3">
-                <img src="./assets/images/arrow_forward_ios_right.png" class="arrow_forward_ios_right">
+                <img src="./assets/images/arrow_forward_ios_right.png" class="arrow_forward_ios_right" onclick="nextSlide('Ingredients')">
                 <p class="minProBottomTxt">
                     *Instrumental test, hair serum vs non conditioning shampoo
                 </p>
             </div>
         </div>
-        <div id="Ingredients" class="container tab-pane m-0 p-0 w-full text-center"><br>
+        <div id="Ingredients" class="container tab-pane m-0 p-0 w-full text-center" style="position: relative"><br>
             <div class="text-center w-full">
                 <img src="./assets/images/Elixir Ultime.png" class="ElixirUltimate">
             </div>
             <p class="ingredientsTxt">What makes it iconic?</p><br>
-            <div style="position: relative">
-                <img src="./assets/images/arrow_forward_ios_left.png" class="arrow_forward_ios_left">
+            <img src="./assets/images/arrow_forward_ios_left.png" class="arrow_forward_ios_left1" onclick="nextSlide('Benefits')">
                 <video autoplay controls>
                     <source src="./assets/video/kerastase.mp4" type="video/mp4">
                 </video>
-                <img src="./assets/images/arrow_forward_ios_right.png" class="arrow_forward_ios_right">
-            </div>
+            <img src="./assets/images/arrow_forward_ios_right.png" class="arrow_forward_ios_right1" onclick="nextSlide('BeforeAfter')">
         </div>
 
-        <div id="BeforeAfter" class="tab-pane m-0 p-0 w-full text-center w-full"><br>
+        <div id="BeforeAfter" class="tab-pane m-0 p-0 w-full text-center justify-content-between w-full" style="position: relative"><br>
+            <img src="./assets/images/arrow_forward_ios_left.png" class="arrow_forward_ios_left1" style="z-index: 9999" onclick="nextSlide('Ingredients')">
+            <img src="./assets/images/arrow_forward_ios_right.png" class="arrow_forward_ios_right1" style="z-index: 9999" onclick="nextSlide('Testimonials')">
+            <div id="moveLine" style="position: absolute; left: 900px !important; width: 10px; height: calc(100vh - 250px); background-color: #fff; z-index: 9999">
+            </div>
+            <img src="./assets/images/move.png" class="moveImg" style="position: absolute; top: 1162px; left: 866px; z-index: 9999;" ontouchend="beforeAfterMouseUp(event)" ontouchmove="beforeAfterMouseMove(event)">
+            <div class="beforeModelContainer">
+                <img src="./assets/images/Before Model.png" class="beforeModel">
+                <p style="position: absolute; left: 170px; top: 212px; font-size: 50px; font-weight: 500;">BEFORE</p>
+            </div>
+            <div class="afterModelContainer">
+                <img src="./assets/images/After model.png" class="afterModel">
+                <p style="position: absolute; right: 170px; top: 212px; font-size: 50px; font-weight: 500;">AFTER</p>
+            </div>
         </div>
 
         <div id="Testimonials" class="tab-pane m-0 p-0 w-full text-center w-full" style="position: relative"><br>
             <div id="testimonialsMain">
                 <img src="./assets/images/ourbest.png" class="ourBest"><br>
-                <img src="./assets/images/arrow_forward_ios_left.png" class="arrow_forward_ios_left1">
+                <img src="./assets/images/arrow_forward_ios_left.png" class="arrow_forward_ios_left1" onclick="nextSlide('BeforeAfter')">
                 <img src="./assets/images/product 6.png" class="product6"><br>
-                <img src="./assets/images/arrow_forward_ios_right.png" class="arrow_forward_ios_right1">
+                <img src="./assets/images/arrow_forward_ios_right.png" class="arrow_forward_ios_right1" onclick="nextSlide('Apply')">
                 <img src="./assets/images/komal.png" style="position: absolute; top: 873px; left: 127px; cursor: pointer" onclick="showUserModal('modalKomal')">
                 <img src="./assets/images/Natasha.png" style="position: absolute; top: 1261px; left: 180px; cursor: pointer" onclick="showUserModal('modalNatasha')">
                 <img src="./assets/images/Rasna.png" style="position: absolute; top: 1157px; right: 224px; cursor: pointer" onclick="showUserModal('modalRasna')">
@@ -114,7 +125,8 @@
             </div>
         </div>
 
-        <div id="Apply" class="tab-pane m-0 p-0 w-full text-center w-full"><br>
+        <div id="Apply" class="tab-pane m-0 p-0 w-full text-center w-full" style="position: relative"><br>
+            <img src="./assets/images/arrow_forward_ios_left.png" class="arrow_forward_ios_left1" onclick="nextSlide('Testimonials')">
             <p style="margin-top: 70px; margin-bottom: 39px; font-size: 52px">HOW TO USE <span style="font-weight: bold;">ELIXIR ULTIME?</span></p>
             <video autoplay controls>
                 <source src="./assets/video/how to apply.mp4">
@@ -124,8 +136,29 @@
             <p style="margin-top: 64px; margin-bottom: 160px; font-size: 33px; font-style: italic">"Lift our other iconic products to discover more!"</p>
         </div>
     </div>
+    <script src="./assets/bootstrap-5.0.2-dist/js/bootstrap.min.js"></script>
+    <script src="./assets/js/jquery.min.js"></script>
 
     <script>
+
+        function startPage() {
+            setTimeout(() => {
+                if($('.minPro6').hasClass('d-sm-none')) {
+                    productResize(0);
+                }
+            }, 1500);
+        }
+
+        function productResize(size) {
+            if (size == 0) {
+                $('.maxPro6').addClass('d-sm-none')
+                $('.minPro6').removeClass('d-sm-none')
+            } else {
+                $('.minPro6').addClass('d-sm-none');
+                $('.maxPro6').removeClass('d-sm-none');
+            }
+        }
+
         function showUserModal(modalID) {
             $('#' + modalID).removeClass('d-sm-none');
             $('#testimonialsMain').addClass('d-sm-none')
@@ -135,10 +168,48 @@
             $('#' + modalID).addClass('d-sm-none');
             $('#testimonialsMain').removeClass('d-sm-none')
         }
+
+        function nextSlide(tabID) {
+            if(tabID == 'BeforeAfter') {
+                $('#BeforeAfter').addClass('d-flex')
+            } else {
+                $('#BeforeAfter').removeClass('d-flex')
+            }
+            $('.nav-link').removeClass('active');
+            $('#' + tabID + 'Tab').addClass('active');
+            $('.tab-pane').removeClass('active');
+            $('#' + tabID).addClass('active')
+        }
+
+        function beforeAfterMouseUp(event) {
+            if(event.changedTouches[0].clientX > 540) {
+                $('#moveLine').css('left', 900);
+                $('.moveImg').css('left', 866)
+                $('.beforeModelContainer').css('width', 900)
+                $('.afterModelContainer').css('width', window.innerWidth - 910)
+            } else {
+                $('#moveLine').css('left', 170);
+                $('.moveImg').css('left', 135)
+                $('.beforeModelContainer').css('width', window.innerWidth - 910)
+                $('.afterModelContainer').css('width', 900)
+            }
+            $('#moveLine').css('transition: 1s');
+            $('.moveImg').css('transition: 1s');
+
+            setTimeout(() => {
+                $('#moveLine').css('transition: 0s');
+                $('.moveImg').css('transition: 0s');
+            }, 1000);
+        }
+        
+        function beforeAfterMouseMove(event) {
+            $('#moveLine').css('left', event.touches[0].clientX);
+            $('.moveImg').css('left', event.touches[0].clientX - 35)
+            $('.beforeModelContainer').css('width', event.touches[0].clientX)
+            $('.afterModelContainer').css('width', window.innerWidth - event.touches[0].clientX - 10)
+        }
     </script>
 
-    <script src="./assets/bootstrap-5.0.2-dist/js/bootstrap.min.js"></script>
-    <script src="./assets/js/jquery.min.js"></script>
 </body>
 
 </html>
