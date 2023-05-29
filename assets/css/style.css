@@ -361,3 +361,72 @@
     right: 0px;
     bottom: 0px;
 }
+
+.leafs1 {
+    animation-name: leafs1-animation;
+    animation-duration: 7s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes leafs1-animation {
+    0% {
+        top: 1350.06px;
+        opacity: 0.3;
+    }
+
+    50% {
+        top: 1600.06px;
+        opacity: 0.3;
+    }
+
+    100% {
+        top: 1600.06px;
+        opacity: 0;
+    }
+}
+
+.leafs2 {
+    animation-name: leafs2-animation;
+    animation-duration: 7s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes leafs2-animation {
+    0% {
+        top: 1002.63px;
+        opacity: 0.3;
+    }
+
+    50% {
+        top: 1252.63px;
+        opacity: 0.3;
+    }
+
+    100% {
+        top: 1252.63px;
+        opacity: 0;
+    }
+}
+
+.leafs3 {
+    animation-name: leafs3-animation;
+    animation-duration: 7s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes leafs3-animation {
+    0% {
+        top: 349.07px;
+        opacity: 0.3;
+    }
+
+    50% {
+        top: 600px;
+        opacity: 0.3;
+    }
+
+    100% {
+        top: 600px;
+        opacity: 0;
+    }
+}
