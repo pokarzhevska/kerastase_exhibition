@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kerastase</title>
+    <link rel="stylesheet" href="./assets/bootstrap-5.0.2-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+
+<body class="m-0 text-center">
+    <img src="./assets/images/Kerastase Logo_Black.png" class="kerastase_logo">
+    <div class="progress">
+        <div class="progress-bar"></div>
+    </div>
+
+    <ul class="nav nav-pills d-flex justify-content-center" role="tablist">
+        <li class="nav-item">
+            <a class="nav-link active" data-bs-toggle="pill" href="#Benefits" id="BenefitsTab">Benefits</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" data-bs-toggle="pill" href="#Ingredients" id="IngredientsTab">Ingredients</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" data-bs-toggle="pill" href="#BeforeAfter" id="BeforeAfterTab">Before & After</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" data-bs-toggle="pill" href="#Testimonials" id="TestimonialsTab">Testimonials</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" data-bs-toggle="pill" href="#Apply" id="ApplyTab">How to Apply</a>
+        </li>
+    </ul>
+
+    <div class="tab-content">
+        <div id="Benefits" class="container tab-pane m-0 p-0 w-full active"><br>
+            <div class="text-center w-full">
+                <img src="./assets/images/Elixir Ultime.png" class="ElixirUltimate">
+            </div>
+            <div class="maxPro6 text-center w-full d-sm-none">
+                <img src="./assets/images/arrow_forward_ios_left.png" class="arrow_forward_ios_left">
+                <img src="./assets/images/product 6.png" class="product6"><br>
+                <img src="./assets/images/arrow_forward_ios_right.png" class="arrow_forward_ios_right">
+                <div class="DiscoverElixirUltimate">Discover Elixir Ultimate
+                    <img src="./assets/images/vector.png">
+                </div>
+            </div>
+            <div class="minPro6 text-center w-full">
+                <img src="./assets/images/rectangle.png" class="rectangle"><br>
+                <img src="./assets/images/arrow_forward_ios_left.png" class="arrow_forward_ios_left">
+                <img src="./assets/images/product 6.png" class="product6"><br>
+                <img src="./assets/images/minPro1.png" class="minPro1">
+                <img src="./assets/images/minPro2.png" class="minPro2">
+                <img src="./assets/images/minPro3.png" class="minPro3">
+                <img src="./assets/images/arrow_forward_ios_right.png" class="arrow_forward_ios_right">
+                <p class="minProBottomTxt">
+                    *Instrumental test, hair serum vs non conditioning shampoo
+                </p>
+            </div>
+        </div>
+        <div id="Ingredients" class="container tab-pane m-0 p-0 w-full text-center"><br>
+            <div class="text-center w-full">
+                <img src="./assets/images/Elixir Ultime.png" class="ElixirUltimate">
+            </div>
+            <p class="ingredientsTxt">What makes it iconic?</p><br>
+            <div style="position: relative">
+                <img src="./assets/images/arrow_forward_ios_left.png" class="arrow_forward_ios_left">
+                <video autoplay controls>
+                    <source src="./assets/video/kerastase.mp4" type="video/mp4">
+                </video>
+                <img src="./assets/images/arrow_forward_ios_right.png" class="arrow_forward_ios_right">
+            </div>
+        </div>
+
+        <div id="BeforeAfter" class="tab-pane m-0 p-0 w-full text-center w-full"><br>
+        </div>
+
+        <div id="Testimonials" class="tab-pane m-0 p-0 w-full text-center w-full" style="position: relative"><br>
+            <div id="testimonialsMain">
+                <img src="./assets/images/ourbest.png" class="ourBest"><br>
+                <img src="./assets/images/arrow_forward_ios_left.png" class="arrow_forward_ios_left1">
+                <img src="./assets/images/product 6.png" class="product6"><br>
+                <img src="./assets/images/arrow_forward_ios_right.png" class="arrow_forward_ios_right1">
+                <img src="./assets/images/komal.png" style="position: absolute; top: 873px; left: 127px; cursor: pointer" onclick="showUserModal('modalKomal')">
+                <img src="./assets/images/Natasha.png" style="position: absolute; top: 1261px; left: 180px; cursor: pointer" onclick="showUserModal('modalNatasha')">
+                <img src="./assets/images/Rasna.png" style="position: absolute; top: 1157px; right: 224px; cursor: pointer" onclick="showUserModal('modalRasna')">
+                <img src="./assets/images/shilarna.png" style="position: absolute; top: 671px; right: 170px; cursor: pointer" onclick="showUserModal('modalShilarna')">
+            </div>
+            <div id="modalNatasha" class="d-sm-none" style="z-index: 9999; width: 100%; height: 1670px; position: relative;">
+                <img src="./assets/images/arrow_forward_ios_left.png" class="arrow_forward_ios_left1">
+                <img src="./assets/images/arrow_forward_ios_right.png" class="arrow_forward_ios_right1">
+                <img src="./assets/images/multi.png" style="position: absolute; right: 105px; top: 229px; cursor: pointer" onclick="hideUserModal('modalNatasha')">
+                <img src="./assets/images/Natasha-modal.png" style="margin-top: 206px; width: calc(100% - 452px)">
+            </div>
+            <div id="modalKomal" class="d-sm-none" style="z-index: 9999; width: 100%; height: 1670px; position: relative;">
+                <img src="./assets/images/arrow_forward_ios_left.png" class="arrow_forward_ios_left1">
+                <img src="./assets/images/arrow_forward_ios_right.png" class="arrow_forward_ios_right1">
+                <img src="./assets/images/multi.png" style="position: absolute; right: 105px; top: 229px; cursor: pointer" onclick="hideUserModal('modalKomal')">
+                <img src="./assets/images/komal-modal.png" style="margin-top: 193px; width: calc(100% - 452px)">
+            </div>
+            <div id="modalRasna" class="d-sm-none" style="z-index: 9999; width: 100%; height: 1670px; position: relative;">
+                <img src="./assets/images/arrow_forward_ios_left.png" class="arrow_forward_ios_left1">
+                <img src="./assets/images/arrow_forward_ios_right.png" class="arrow_forward_ios_right1">
+                <img src="./assets/images/multi.png" style="position: absolute; right: 105px; top: 229px; cursor: pointer" onclick="hideUserModal('modalRasna')">
+                <img src="./assets/images/Rasna-modal.png" style="margin-top: 167px; width: calc(100% - 452px)">
+            </div>
+            <div id="modalShilarna" class="d-sm-none" style="z-index: 9999; width: 100%; height: 1670px; position: relative;">
+                <img src="./assets/images/arrow_forward_ios_left.png" class="arrow_forward_ios_left1">
+                <img src="./assets/images/arrow_forward_ios_right.png" class="arrow_forward_ios_right1">
+                <img src="./assets/images/multi.png" style="position: absolute; right: 105px; top: 229px; cursor: pointer" onclick="hideUserModal('modalShilarna')">
+                <img src="./assets/images/shilarna-modal.png" style="margin-top: 165px; width: calc(100% - 452px)">
+            </div>
+        </div>
+
+        <div id="Apply" class="tab-pane m-0 p-0 w-full text-center w-full"><br>
+            <p style="margin-top: 70px; margin-bottom: 39px; font-size: 52px">HOW TO USE <span style="font-weight: bold;">ELIXIR ULTIME?</span></p>
+            <video autoplay controls>
+                <source src="./assets/video/how to apply.mp4">
+            </video>
+            <p style="margin-top: 120.56px; margin-bottom: 33px; font-size: 50px">ASK YOUR HAIR STYLIST<br> FOR A <span style="font-weight: bold;">DIAGNOSIS</span></p>
+            <img src="./assets/images/consultation kerastase.png" style="width: 831px; height: 467.44px">
+            <p style="margin-top: 64px; margin-bottom: 160px; font-size: 33px; font-style: italic">"Lift our other iconic products to discover more!"</p>
+        </div>
+    </div>
+
+    <script>
+        function showUserModal(modalID) {
+            $('#' + modalID).removeClass('d-sm-none');
+            $('#testimonialsMain').addClass('d-sm-none')
+        }
+
+        function hideUserModal(modalID) {
+            $('#' + modalID).addClass('d-sm-none');
+            $('#testimonialsMain').removeClass('d-sm-none')
+        }
+    </script>
+
+    <script src="./assets/bootstrap-5.0.2-dist/js/bootstrap.min.js"></script>
+    <script src="./assets/js/jquery.min.js"></script>
+</body>
+
+</html>
