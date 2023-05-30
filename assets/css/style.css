@@ -1,3 +1,7 @@
+.p-relative {
+    position: relative;
+}
+
 .kerastase_logo {
     width: 316px;
     height: 90px;
@@ -13,7 +17,7 @@
     background-color: #4d4d4d;
     height: 5px;
     width: 100%;
-    animation-name: progress-bar-animation;
+    /* animation-name: progress-bar-animation; */
     animation-duration: 7.5s;
     animation-iteration-count: infinite;
 }
@@ -41,11 +45,18 @@
     font-weight: bold;
     font-size: 20px;
     font-style: normal;
-    line-height: 150%;
+    line-height: 30px;
+    font-weight: 500;
+    font-family: 'Gotham book';
 }
 
 .nav-pills li .active {
     opacity: 1;
+    font-weight: 400;
+    font-family: 'Gotham';
+    font-style: normal;
+    line-height: 150%;
+    color: black;
 }
 
 .ElixirUltimate {
@@ -142,12 +153,32 @@
 }
 
 .DiscoverElixirUltimate {
-    position: absolute;
-    margin-left: 350px;
+    position: relative;
     font-size: 40px;
+    font-family: 'Kepler Std';
     font-style: italic;
-    bottom: 160px;
+    margin-top: 66px;
+    margin-bottom: 160px;
     font-weight: 300;
+    line-height: 23px;
+    letter-spacing: -1.5px;
+    animation-name: discoverElixirUltimate-animation;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes discoverElixirUltimate-animation {
+    0% {
+        font-size: 40px;
+    }
+
+    50% {
+        font-size: 44px;
+    }
+
+    100% {
+        font-size: 40px;
+    }
 }
 
 .DiscoverElixirUltimate img {
@@ -205,6 +236,8 @@
     line-height: 25px;
     animation-name: minProBottomTxt-animation;
     animation-duration: 1s;
+    font-family: 'Gotham Book';
+    color: black;
 }
 
 @keyframes minProBottomTxt-animation {
@@ -304,7 +337,7 @@
 
 .ingredientsTxt {
     font-size: 65px;
-    line-height: 62.25px;
+    line-height: 62px;
     font-style: italic;
     font-weight: 300;
     margin-top: 18px;
@@ -336,7 +369,7 @@
 
 .beforeModelContainer {
     position: relative;
-    width: 900px;
+    width: 810px;
     height: 1653px;
     overflow: hidden;
 }
@@ -350,7 +383,7 @@
 
 .afterModelContainer {
     position: relative;
-    width: calc(100% - 910px);
+    width: calc(100% - 820px);
     height: 1653px;
     overflow: hidden;
 }
@@ -429,4 +462,71 @@
         top: 600px;
         opacity: 0;
     }
+}
+
+.beforeAfterSwipe {
+    position: absolute;
+    bottom: 107px;
+    left: calc(50% - 191px);
+    font-size: 44px;
+    line-height: 23px;
+    font-style: italic;
+    letter-spacing: -1.5px;
+    animation-name: beforeAfterSwipe-animation;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes beforeAfterSwipe-animation {
+    0% {
+        font-size: 44px;
+        left: calc(50% - 191px);
+    }
+
+    50% {
+        font-size: 46px;
+        left: calc(50% - 203px);
+    }
+
+    100% {
+        font-size: 44px;
+        left: calc(50% - 191px);
+    }
+}
+
+.liftOurOther {
+    animation-name: liftOurOther-animation;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes liftOurOther-animation {
+    0% {
+        font-size: 33px;
+    }
+
+    50% {
+        font-size: 35px;
+    }
+
+    100% {
+        font-size: 33px;
+    }
+}
+
+.ingredientsReplayContainer {
+    position: absolute;
+    width: 660px;
+    height: 1210px;
+    left: calc(50% - 330px);
+    top: 40px;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.backToHome {
+    position: absolute;
+    right: 35px;
+    bottom: 26px;
+    width: 229px;
+    height: 46px;
 }
