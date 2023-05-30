@@ -17,8 +17,8 @@
     background-color: #4d4d4d;
     height: 5px;
     width: 100%;
-    /* animation-name: progress-bar-animation; */
-    animation-duration: 7.5s;
+    animation-name: progress-bar-animation;
+    animation-duration: 5s;
     animation-iteration-count: infinite;
 }
 
@@ -372,7 +372,18 @@
     width: 810px;
     height: 1653px;
     overflow: hidden;
+    animation-duration: 5s;
 }
+
+@keyframes beforeModelContainer-animation {
+    0% {
+        width: 810px;
+    }
+
+    100% {
+        width: calc(100% - 820px);
+    }
+} 
 
 .beforeModel {
     position: absolute;
@@ -387,6 +398,16 @@
     height: 1653px;
     overflow: hidden;
 }
+
+@keyframes afterModelContainer-animation {
+    0% {
+        width: calc(100% - 820px);
+    }
+
+    100% {
+        width: 810px;
+    }
+} 
 
 .afterModel {
     position: absolute;

@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="./assets/css/style.css">
 </head>
 
-<body class="m-0 text-center" style="width: 100%; height: 1920px;" onload="startPage()">
+<body class="m-0 text-center" style="width: 100%; height: 1920px; overflow: hidden;" onload="startPage()">
     <img src="./assets/images/Kerastase Logo_Black.png" class="kerastase_logo">
     <div class="progress">
         <div class="progress-bar"></div>
@@ -52,7 +52,7 @@
                 <img src="./assets/images/image1/Elixir Ultime.png" class="ElixirUltimate">
             </div>
             <div class="maxPro6 text-center w-full">
-                <img src="./assets/images/expand_circle_left.png" class="arrow_forward_ios_left">
+                <img src="./assets/images/expand_circle_left.png" class="arrow_forward_ios_left" onclick="backToHome()">
                 <img src="./assets/images/image1/product 6.png" class="product6"><br>
                 <img src="./assets/images/expand_circle_right.png" class="arrow_forward_ios_right"
                     onclick="productResize(0)">
@@ -83,7 +83,7 @@
             <img src="./assets/images/expand_circle_left.png" class="arrow_forward_ios_left1"
                 onclick="nextSlide('Benefits')">
             <div class="p-relative">
-                <video autoplay playsinline muted id="IngredientsVideo">
+                <video autoplay playsinline id="IngredientsVideo">
                     <source src="./assets/video/kerastase.mp4" type="video/mp4">
                 </video>
                 <div class="ingredientsReplayContainer d-sm-none">
@@ -132,23 +132,39 @@
                 <img src="./assets/images/image1/product 6.png" class="product6"><br>
                 <img src="./assets/images/expand_circle_right.png" class="arrow_forward_ios_right1"
                     onclick="nextSlide('Apply')">
-                <img src="./assets/images/image1/komal.png"
-                    style="position: absolute; top: 873px; left: 127px; cursor: pointer"
-                    onclick="showUserModal('modalKomal')">
-                <img src="./assets/images/image1/Natasha.png"
-                    style="position: absolute; top: 1261px; left: 180px; cursor: pointer"
-                    onclick="showUserModal('modalNatasha')">
-                <img src="./assets/images/image1/Rasna.png"
-                    style="position: absolute; top: 1157px; right: 224px; cursor: pointer"
-                    onclick="showUserModal('modalRasna')">
-                <img src="./assets/images/image1/shilarna.png"
-                    style="position: absolute; top: 671px; right: 170px; cursor: pointer"
-                    onclick="showUserModal('modalShilarna')">
+                <div style="position: absolute; top: 873px; left: 127px; width: 156px; height: 208px; cursor: pointer">
+                    <img src="./assets/images/image1/komal.png"
+                        style="width: 156px"
+                        onclick="showUserModal('modalKomal')">
+                    <p style="font-size: 22.79px; line-height: 24px; font-weight: 500;">Komal B</p>
+                    <img src="./assets/images/five-star.png">
+                </div>
+                <div style="position: absolute; top: 1261px; left: 180px; width: 156px; height: 208px; cursor: pointer">
+                    <img src="./assets/images/image1/Natasha.png"
+                        style="width: 156px"
+                        onclick="showUserModal('modalNatasha')">
+                    <p style="font-size: 22.79px; line-height: 24px; font-weight: 500;">Natasha P</p>
+                    <img src="./assets/images/five-star.png">
+                </div>
+                <div style="position: absolute; top: 1157px; right: 200px; width: 156px; height: 208px; cursor: pointer">
+                    <img src="./assets/images/image1/Rasna.png"
+                        style="width: 156px"
+                        onclick="showUserModal('modalRasna')">
+                    <p style="font-size: 22.79px; line-height: 24px; font-weight: 500;">Rasna B</p>
+                    <img src="./assets/images/five-star.png">
+                </div>
+                <div style="position: absolute; top: 671px; right: 170px; width: 156px; height: 208px; cursor: pointer">
+                    <img src="./assets/images/image1/shilarna.png"
+                        style="width: 156px"
+                        onclick="showUserModal('modalShilarna')">
+                    <p style="font-size: 22.79px; line-height: 24px; font-weight: 500;">Shilarna V</p>
+                    <img src="./assets/images/less-star.png">
+                </div>
             </div>
             <div id="modalNatasha" class="d-sm-none p-relative" style="z-index: 9999; width: 100%; height: 1670px;">
                 <img src="./assets/images/expand_circle_left.png" class="arrow_forward_ios_left1">
                 <img src="./assets/images/expand_circle_right.png" class="arrow_forward_ios_right1">
-                <img src="./assets/images/multi.png"
+                <img src="./assets/images/Cancel.png"
                     style="position: absolute; right: 105px; top: 229px; cursor: pointer"
                     onclick="hideUserModal('modalNatasha')">
                 <img src="./assets/images/image1/Natasha-modal.png"
@@ -158,7 +174,7 @@
                 style="z-index: 9999; width: 100%; height: 1670px;">
                 <img src="./assets/images/expand_circle_left.png" class="arrow_forward_ios_left1">
                 <img src="./assets/images/expand_circle_right.png" class="arrow_forward_ios_right1">
-                <img src="./assets/images/multi.png"
+                <img src="./assets/images/Cancel.png"
                     style="position: absolute; right: 105px; top: 229px; cursor: pointer"
                     onclick="hideUserModal('modalKomal')">
                 <img src="./assets/images/image1/komal-modal.png" style="margin-top: 193px; width: calc(100% - 452px)">
@@ -167,7 +183,7 @@
                 style="z-index: 9999; width: 100%; height: 1670px;">
                 <img src="./assets/images/expand_circle_left.png" class="arrow_forward_ios_left1">
                 <img src="./assets/images/expand_circle_right.png" class="arrow_forward_ios_right1">
-                <img src="./assets/images/multi.png"
+                <img src="./assets/images/Cancel.png"
                     style="position: absolute; right: 105px; top: 229px; cursor: pointer"
                     onclick="hideUserModal('modalRasna')">
                 <img src="./assets/images/image1/Rasna-modal.png" style="margin-top: 167px; width: calc(100% - 452px)">
@@ -176,7 +192,7 @@
                 style="z-index: 9999; width: 100%; height: 1670px;">
                 <img src="./assets/images/expand_circle_left.png" class="arrow_forward_ios_left1">
                 <img src="./assets/images/expand_circle_right.png" class="arrow_forward_ios_right1">
-                <img src="./assets/images/multi.png"
+                <img src="./assets/images/Cancel.png"
                     style="position: absolute; right: 105px; top: 229px; cursor: pointer"
                     onclick="hideUserModal('modalShilarna')">
                 <img src="./assets/images/image1/shilarna-modal.png"
@@ -190,7 +206,7 @@
             <p style="margin-top: 70px; margin-bottom: 39px; font-size: 52px; line-height: 56px;">HOW TO USE <span
                     style="font-weight: bold;">ELIXIR ULTIME?</span></p>
             <div class="p-relative">
-                <video autoplay playsinline muted id="applyVideo">
+                <video autoplay playsinline id="applyVideo">
                     <source src="./assets/video/how to apply.mp4">
                 </video>
                 <div class="applyReplayContainer d-sm-none"
@@ -205,7 +221,7 @@
             <p class="liftOurOther"
                 style="margin-top: 64px; margin-bottom: 160px; font-size: 33px; font-style: italic; font-weight: 300; line-height: 23px; letter-spacing: -1.5px;">
                 "Lift our other iconic products to discover more!"</p>
-            <img src="./assets/images/back to home.png" class="backToHome">
+            <img src="./assets/images/back to home.png" class="backToHome" onclick="backToHome()">
         </div>
     </div>
     <script src="./assets/bootstrap-5.0.2-dist/js/bootstrap.min.js"></script>
@@ -221,9 +237,7 @@
         var tabArray = ['Benefits', 'Ingredients', 'BeforeAfter', 'Testimonials', 'Apply']
 
         function startPage() {
-            $('.progress-bar').css('animation-name', '')
-            $('.progress-bar').css('animation-name', 'progress-bar-animation')
-            $('.progress-bar').css('width', '0%')
+            $('.progress').html('<div class="progress-bar"></div>')
             clearTimeout(stoptimeout)
             clearTimeout(stoptimeout1)
             clearTimeout(stoptimeout2)
@@ -236,9 +250,7 @@
         }
 
         function productResize(size) {
-            $('.progress-bar').css('animation-name', '')
-            $('.progress-bar').css('animation-name', 'progress-bar-animation')
-            $('.progress-bar').css('width', '0%')
+            $('.progress').html('<div class="progress-bar"></div>')
             clearTimeout(stoptimeout)
             clearTimeout(stoptimeout1)
             clearTimeout(stoptimeout2)
@@ -269,16 +281,14 @@
         }
 
         function nextSlide(tabID) {
-            $('.progress-bar').css('animation-name', '')
-            $('.progress-bar').css('animation-name', 'progress-bar-animation')
-            $('.progress-bar').css('width', '0%')
+            $('.progress').html('<div class="progress-bar"></div>')
             if (tabID == 'Ingredients') {
-                document.getElementById("IngredientsVideo").play()
+                playIngredientsVideo()
             } else {
                 document.getElementById("IngredientsVideo").pause()
             }
             if (tabID == 'Apply') {
-                document.getElementById("applyVideo").play()
+                applyVideoPlay()
             } else {
                 document.getElementById("applyVideo").pause()
             }
@@ -316,6 +326,24 @@
                         $('.applyReplay').removeClass('d-sm-none');
                     }
                 }, 11000);
+            } else if(tabID == 'BeforeAfter') {
+                stoptimeout = setTimeout(() => {
+                    if ($('#BeforeAfterTab').hasClass('active')) {
+                        nextSlide('Testimonials')
+                    }
+                }, 10000);
+                stoptimeout3 = setTimeout(() => {
+                    if ($('#BeforeAfterTab').hasClass('active')) {
+                        $('.beforeModelContainer').css('animation-name', 'beforeModelContainer-animation')
+                        $('.afterModelContainer').css('animation-name', 'afterModelContainer-animation')
+                    }
+                }, 2500);
+            } else if(tabID == 'Testimonials') {
+                stoptimeout = setTimeout(() => {
+                    if ($('#TestimonialsTab').hasClass('active')) {
+                        nextSlide('Apply')
+                    }
+                }, 10000);
             }
 
         }
@@ -358,6 +386,10 @@
             document.getElementById("applyVideo").play();
             $('.applyReplayContainer').addClass('d-sm-none');
             $('.applyReplay').addClass('d-sm-none');
+        }
+
+        function backToHome() {
+            window.location = './index.html'
         }
     </script>
 
