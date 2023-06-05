@@ -19,6 +19,7 @@
     width: 100%;
     animation-name: progress-bar-animation;
     animation-duration: 5s;
+     animation-timing-function: linear;
     animation-iteration-count: infinite;
 }
 
@@ -47,7 +48,7 @@
     font-style: normal;
     line-height: 30px;
     font-weight: 500;
-    font-family: 'Gotham book';
+    font-family: 'Gotham book Regular';
 }
 
 .nav-pills li .active {
@@ -83,6 +84,7 @@
     height: 1101px;
     animation-name: maxPro6-animation;
     animation-duration: 1s;
+     animation-timing-function: linear;
 }
 
 @keyframes maxPro6-animation {
@@ -165,6 +167,7 @@
     letter-spacing: -1.5px;
     animation-name: discoverElixirUltimate-animation;
     animation-duration: 2s;
+     animation-timing-function: linear;
     animation-iteration-count: infinite;
 }
 
@@ -194,6 +197,7 @@
     margin-top: 30px;
     animation-name: rectangle-animation;
     animation-duration: 1s;
+     animation-timing-function: linear;
 }
 
 @keyframes rectangle-animation {
@@ -213,6 +217,7 @@
     margin-bottom: 168.4px;
     animation-name: minPro6-animation;
     animation-duration: 1s;
+     animation-timing-function: linear;
 }
 
 @keyframes minPro6-animation {
@@ -239,6 +244,7 @@
     font-style: italic;
     animation-name: minProBottomTxt-animation;
     animation-duration: 1s;
+     animation-timing-function: linear;
     font-family: 'Gotham Book';
     color: black;
 }
@@ -258,6 +264,7 @@
     left: calc(50% + 110px);
     animation-name: minPro1-animation;
     animation-duration: 4s;
+     animation-timing-function: linear;
 }
 
 @keyframes minPro1-animation {
@@ -288,6 +295,7 @@
     right: calc(50% + 110px);
     animation-name: minPro2-animation;
     animation-duration: 3s;
+     animation-timing-function: linear;
 }
 
 @keyframes minPro2-animation {
@@ -315,6 +323,7 @@
     right: calc(50% - 135px);
     animation-name: minPro3-animation;
     animation-duration: 2s;
+     animation-timing-function: linear;
 }
 
 @keyframes minPro3-animation {
@@ -370,6 +379,7 @@
     height: 1653px;
     overflow: hidden;
     animation-duration: 5s;
+     animation-timing-function: linear;
 }
 
 @keyframes beforeModelContainer-animation {
@@ -395,6 +405,7 @@
     height: 1653px;
     overflow: hidden;
     animation-duration: 5s;
+     animation-timing-function: linear;
 }
 
 @keyframes afterModelContainer-animation {
@@ -417,6 +428,7 @@
 .leafs1 {
     animation-name: leafs1-animation;
     animation-duration: 7s;
+     animation-timing-function: linear;
     animation-iteration-count: infinite;
 }
 
@@ -440,6 +452,7 @@
 .leafs2 {
     animation-name: leafs2-animation;
     animation-duration: 7s;
+     animation-timing-function: linear;
     animation-iteration-count: infinite;
 }
 
@@ -463,6 +476,7 @@
 .leafs3 {
     animation-name: leafs3-animation;
     animation-duration: 7s;
+     animation-timing-function: linear;
     animation-iteration-count: infinite;
 }
 
@@ -493,6 +507,7 @@
     letter-spacing: -1.5px;
     animation-name: beforeAfterSwipe-animation;
     animation-duration: 2s;
+     animation-timing-function: linear;
     animation-iteration-count: infinite;
 }
 
@@ -516,6 +531,7 @@
 .liftOurOther {
     animation-name: liftOurOther-animation;
     animation-duration: 2s;
+     animation-timing-function: linear;
     animation-iteration-count: infinite;
 }
 

@@ -1,0 +1,681 @@
+@font-face {
+    font-family: 'Gotham Book Regular';
+    src: url(../font/Gotham/Gotham\ Book\ Font.otf);
+}
+
+.p-relative {
+    position: relative;
+}
+
+.kerastase_logo {
+    width: 316px;
+    height: 90px;
+    margin-top: 35px;
+    margin-bottom: 35px;
+}
+
+.progress {
+    background-color: transparent !important;
+}
+
+.progress .progress-bar {
+    background-color: #4d4d4d;
+    height: 5px;
+    width: 100%;
+    animation-name: progress-bar-animation;
+    animation-duration: 5s;
+     animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+@keyframes progress-bar-animation {
+    0% {
+        width: 0%;
+    }
+
+    100% {
+        width: 100%
+    }
+}
+
+.nav-pills {
+    height: 90px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.nav-pills li a {
+    color: black !important;
+    opacity: 0.2;
+    background-color: transparent !important;
+    font-weight: bold;
+    font-size: 20px;
+    font-style: normal;
+    line-height: 30px;
+    font-weight: 500;
+    font-family: 'Gotham Book Regular';
+}
+
+.nav-pills li .active {
+    opacity: 1;
+    font-weight: 400;
+    font-family: 'Gotham Book Regular';
+    font-style: normal;
+    line-height: 150%;
+    color: black;
+}
+
+.ElixirUltimate {
+    margin-top: 30px;
+    width: 839px;
+    height: 202px;
+}
+
+.tab-pane {
+    max-width: 100%;
+    background-color: #f5f5f5;
+    height: 1653px;
+    z-index: 0;
+}
+
+.maxPro6, .minPro6 {
+    position: relative;
+    height: 1430px;
+}
+
+.maxPro6 .product6 {
+    margin-top: 75px;
+    width: 330px;
+    height: 1070px;
+    animation-name: maxPro6-animation;
+    animation-duration: 1s;
+     animation-timing-function: linear;
+}
+
+@keyframes maxPro6-animation {
+    from {
+        width: 268px;
+        height: 869px;
+        margin-top: 350px;
+    }
+    
+    to {
+        width: 330px;
+        height: 1070px;
+        margin-top: 75px;
+    }
+}
+
+.arrow_forward_ios_left {
+    position: absolute;
+    width: 71.22px;
+    height: 71.22px;
+    left: 72px;
+    top: 519.78px;
+    cursor: pointer;
+}
+
+.arrow_forward_ios_right {
+    position: absolute;
+    width: 71.22px;
+    height: 71.22px;
+    right: 72px;
+    top: 519.78px;
+    cursor: pointer;
+}
+
+.arrow_forward_ios_left2 {
+    position: absolute;
+    width: 71.22px;
+    height: 71.22px;
+    left: 72px;
+    top: 519.78px;
+    cursor: pointer;
+}
+
+.arrow_forward_ios_right2 {
+    position: absolute;
+    width: 71.22px;
+    height: 71.22px;
+    right: 72px;
+    top: 519.78px;
+    cursor: pointer;
+}
+
+.arrow_forward_ios_left1 {
+    position: absolute;
+    width: 71.22px;
+    height: 71.22px;
+    left: 72px;
+    top: 795px;
+    cursor: pointer;
+}
+
+.arrow_forward_ios_right1 {
+    position: absolute;
+    width: 71.22px;
+    height: 71.22px;
+    right: 72px;
+    top: 795px;
+    cursor: pointer;
+}
+
+.DiscoverElixirUltimate {
+    position: relative;
+    font-size: 40px;
+    font-family: 'Kepler Std';
+    font-style: italic;
+    margin-top: 66px;
+    margin-bottom: 160px;
+    font-weight: 300;
+    line-height: 23px;
+    letter-spacing: -1.5px;
+    animation-name: discoverElixirUltimate-animation;
+    animation-duration: 2s;
+     animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+@keyframes discoverElixirUltimate-animation {
+    0% {
+        font-size: 40px;
+    }
+
+    50% {
+        font-size: 44px;
+    }
+
+    100% {
+        font-size: 40px;
+    }
+}
+
+.DiscoverElixirUltimate img {
+    width: 20px;
+    height: 40px;
+    margin-left: 20px;
+}
+
+.minPro6 .rectangle {
+    width: 798px;
+    height: 165px;
+    margin-top: 30px;
+    animation-name: rectangle-animation;
+    animation-duration: 1s;
+     animation-timing-function: linear;
+}
+
+@keyframes rectangle-animation {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+.minPro6 .product6 {
+    margin-top: 181px;
+    width: 268px;
+    height: 869px;
+    margin-bottom: 168.4px;
+    animation-name: minPro6-animation;
+    animation-duration: 1s;
+     animation-timing-function: linear;
+}
+
+@keyframes minPro6-animation {
+    from {
+        width: 330px;
+        height: 1070px;
+        margin-top: -100px;
+    }
+
+    to {
+        width: 268px;
+        height: 869px;
+        margin-top: 181px;
+    }
+}
+
+.tabPrompt {
+    position: absolute;
+    width: 200px;
+    height: 150px;
+    background-color: white;
+    border-radius: 75px;
+    left: calc(50% - 100px);
+    top: 500px;
+    animation-name: tabPrompt-animation;
+    animation-duration: 1s;
+     animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+@keyframes tabPrompt-animation {
+    0% {
+        opacity: 0.4;
+    }
+
+    50% {
+        opacity: 0.9;
+    }
+
+    100% {
+        opacity: 0.4;
+    }
+}
+
+.minProBottomTxt {
+    text-align: right;
+    position: absolute;
+    bottom: 62px;
+    right: 63px;
+    font-size: 25px;
+    line-height: 25px;
+    font-style: italic;
+    animation-name: minProBottomTxt-animation;
+    animation-duration: 1s;
+     animation-timing-function: linear;
+    font-family: 'Gotham Book Regular';
+    color: black;
+}
+
+@keyframes minProBottomTxt-animation {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.minPro1 {
+    position: absolute;
+    top: 783px;
+    left: calc(50% + 110px);
+    animation-name: minPro1-animation;
+    animation-duration: 4s;
+     animation-timing-function: linear;
+}
+
+@keyframes minPro1-animation {
+    0% {
+        opacity: 0;
+    }
+
+    25% {
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 0;
+    }
+
+    75% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+.minPro2 {
+    position: absolute;
+    top: 861px;
+    right: calc(50% + 110px);
+    animation-name: minPro2-animation;
+    animation-duration: 3s;
+     animation-timing-function: linear;
+}
+
+@keyframes minPro2-animation {
+    0% {
+        opacity: 0;
+    }
+
+    33% {
+        opacity: 0;
+    }
+
+    66% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+
+.minPro3 {
+    position: absolute;
+    top: 235px;
+    right: calc(50% - 135px);
+    animation-name: minPro3-animation;
+    animation-duration: 2s;
+     animation-timing-function: linear;
+}
+
+@keyframes minPro3-animation {
+    0% {
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+
+.ingredientsTxt {
+    font-size: 65px;
+    line-height: 62px;
+    font-style: italic;
+    font-weight: 300;
+    margin-top: 18px;
+}
+
+#Ingredients video {
+    margin-top: 40px;
+    height: 1210.73px;
+    margin-bottom: 84.27px;
+}
+
+.ourBest {
+    width: 823px;
+    height: 383px;
+    margin-top: 111px;
+}
+
+#Testimonials .product6 {
+    width: 284px;
+    height: 921px;
+    margin-top: 59px;
+    margin-bottom: 186px;
+}
+
+#Apply video {
+    width: 831px;
+    height: 467px;
+}
+
+.beforeModelContainer {
+    position: relative;
+    width: 810px;
+    height: 1653px;
+    overflow: hidden;
+    animation-duration: 5s;
+     animation-timing-function: linear;
+}
+
+@keyframes beforeModelContainer-animation {
+    0% {
+        width: 810px;
+    }
+
+    100% {
+        width: calc(100% - 820px);
+    }
+} 
+
+.beforeModel {
+    position: absolute;
+    bottom: -30px;
+    left: 0px;
+    width: 1080px;
+}
+
+.afterModelContainer {
+    position: relative;
+    width: calc(100% - 820px);
+    height: 1653px;
+    overflow: hidden;
+    animation-duration: 5s;
+     animation-timing-function: linear;
+}
+
+@keyframes afterModelContainer-animation {
+    0% {
+        width: calc(100% - 820px);
+    }
+
+    100% {
+        width: 810px;
+    }
+} 
+
+.afterModel {
+    position: absolute;
+    width: 1080px;
+    right: 0px;
+    bottom: 0px;
+}
+
+.leafs1 {
+    animation-name: leafs1-animation;
+    animation-duration: 7s;
+     animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+@keyframes leafs1-animation {
+    0% {
+        top: 1350.06px;
+        opacity: 0.3;
+    }
+
+    50% {
+        top: 1600.06px;
+        opacity: 0.3;
+    }
+
+    100% {
+        top: 1600.06px;
+        opacity: 0;
+    }
+}
+
+.leafs2 {
+    animation-name: leafs2-animation;
+    animation-duration: 7s;
+     animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+@keyframes leafs2-animation {
+    0% {
+        top: 1002.63px;
+        opacity: 0.3;
+    }
+
+    50% {
+        top: 1252.63px;
+        opacity: 0.3;
+    }
+
+    100% {
+        top: 1252.63px;
+        opacity: 0;
+    }
+}
+
+.leafs3 {
+    animation-name: leafs3-animation;
+    animation-duration: 7s;
+     animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+@keyframes leafs3-animation {
+    0% {
+        top: 349.07px;
+        opacity: 0.3;
+    }
+
+    50% {
+        top: 600px;
+        opacity: 0.3;
+    }
+
+    100% {
+        top: 600px;
+        opacity: 0;
+    }
+}
+
+.beforeAfterSwipe {
+    position: absolute;
+    bottom: 107px;
+    left: calc(50% - 191px);
+    font-size: 44px;
+    line-height: 23px;
+    font-style: italic;
+    letter-spacing: -1.5px;
+    animation-name: beforeAfterSwipe-animation;
+    animation-duration: 2s;
+     animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+@keyframes beforeAfterSwipe-animation {
+    0% {
+        font-size: 44px;
+        left: calc(50% - 191px);
+    }
+
+    50% {
+        font-size: 46px;
+        left: calc(50% - 203px);
+    }
+
+    100% {
+        font-size: 44px;
+        left: calc(50% - 191px);
+    }
+}
+
+.liftOurOther {
+    animation-name: liftOurOther-animation;
+    animation-duration: 2s;
+     animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+@keyframes liftOurOther-animation {
+    0% {
+        font-size: 33px;
+    }
+
+    50% {
+        font-size: 35px;
+    }
+
+    100% {
+        font-size: 33px;
+    }
+}
+
+.ingredientsReplayContainer {
+    position: absolute;
+    width: 660px;
+    height: 1210px;
+    left: calc(50% - 330px);
+    top: 40px;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.backToHome {
+    position: absolute;
+    right: 35px;
+    bottom: 26px;
+    width: 229px;
+    height: 46px;
+}
+
+@keyframes moveLine-animation {
+    0% {
+        left: 810px;
+    }
+
+    100% {
+        left: calc(100% - 820px);
+    }
+}
+
+@keyframes moveImg-animation {
+    0% {
+        left: 775px;
+    }
+
+    100% {
+        left: calc(100% - 855px);
+    }
+}
+
+.BeforeAfterTapPrompt {
+    position: absolute;
+    left: 650px;
+    top: 1162px;
+    width: 100px;
+    height: 100px;
+    background-color: #fff;
+    z-index: 9999;
+    border-radius: 50px;
+    opacity: 0;
+    animation-name: beforeaftertapprompt-animation;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+@keyframes beforeaftertapprompt-animation {
+    0% {
+        width: 100px;
+        height: 100px;
+        opacity: 0;
+        left: 650px;
+    }
+
+    25% {
+        width: 100px;
+        height: 100px;
+        opacity: 0.5;
+        left: 650px;
+    }
+
+    50% {
+        width: 150px;
+        height: 100px;
+        opacity: 0.5;
+        left: 600px;
+    }
+
+    75% {
+        width: 100px;
+        height: 100px;
+        opacity: 0.5;
+        left: 600px;
+    }
+
+    100% {
+        width: 100px;
+        height: 100px;
+        opacity: 0;
+        left: 600px;
+    }
+}
+
+.ingredientsVideoContainer {
+    position: absolute;
+    width: 660px;
+    height: 1210px;
+    left: calc(50% - 330px);
+    top: 40px;
+}
